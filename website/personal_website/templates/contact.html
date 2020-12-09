@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1 class="heading">Vincent Thompson - Data Scientist</h1>
+	<div class="body-text">
+		<p>
+			I created this application as part of a deep learning project for the data science bootcamp Metis.  The code to create the app, as well as the machine learning model that provides the functionality, can be found in my <a href="https://github.com/vincent-thompson" target="_blank">Github repo</a> for this project.
+		</p>
+
+		<p>
+			I am passionate about using data science ethically to facilitate user-driven innovation.  If you have questions about this project, would like to see my other work, or contact me directly, feel free to use my links provided here!
+		</p>
+		<hr>
+		<!-- <div class="icons">
+			<ul>
+				<div class="row">
+					
+					<li>
+						<p>  
+							<img style="width:75px; border: 1px solid #000000; border-radius:4px;" src="{{ url_for('get_image', filename='github.png') }}">
+						</p>
+					</li>
+				</div>
+				<div class="row">
+					<li>
+						<p>
+							<img style="width:75px;" src="{{ url_for('get_image', filename='linkedin.png') }}">
+						</p>
+					</li>
+				</div>
+				<div class="row">
+					<li>
+						<p>
+							<img style="width:75px;" src="{{ url_for('get_image', filename='medium.png') }}">
+						</p>
+					</li>
+				</div>
+			</ul>
+		</div> -->
+
+	</div>
+{% endblock content %}
+
+{% block image_container %}
+	<div class="screen-contact">
+		<div class="background-image">
+			<div class="wallpaper">
+				<img class="wallpaper-image" src="{{ url_for('get_image', filename='contact_wallpaper.jpg') }}">
+			</div>
+
+			<div class="icon-container">
+				<div class="icons">
+					
+						<p>  
+							<a href="https://github.com/vincent-thompson" target="_blank" rel="noopener noreferrer">
+								<img class = "icon" src="{{ url_for('get_image', filename='github.png') }}">
+							</a>
+						</p>
+				</div>
+				<div class="icons">
+						<p>
+							<a href="https://www.linkedin.com/in/vincent-paul-thompson/" target="_blank" rel="noopener noreferrer">
+								<img class = "icon" src="{{ url_for('get_image', filename='linkedin.png') }}">
+							</a>
+						</p>
+				</div>
+				<div class="icons">
+						<p>
+							<a href="https://medium.com/@vinnythompson14" target="_blank" rel="noopener noreferrer">
+								<img class = "icon" src="{{ url_for('get_image', filename='medium.jpg') }}">
+							</a>
+						</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- <img style="width:224px; height: 394px; background-color: #ffffff" src="{{ url_for('get_image', filename='computer_vision_wallpaper.png') }}"> -->
+{% endblock image_container %}

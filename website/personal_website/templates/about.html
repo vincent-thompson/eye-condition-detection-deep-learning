@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1 class="heading">About This Project</h1>
+	<div class="body-text">
+		<p>
+			2020 has, in large part thanks to the COVID-19 Pandemic, has stressed the importance of expanding telehealth services so that Americans can receive health care from the safety of their homes.  Unfortunately there are still major hurdles to adoption, foremost being lack of access and awareness. Only 1 in 10 Americans use telehealth services, but nearly 75% say they don't have access or are unaware of telehealth options. 
+		</p>
+
+		<p>
+			In the interim, patients are forced to weigh the added complications associated with an in-person healthcare visit, things like limited operating hours, the effects of patient surge on facilities, and increased COVID-19 exposure for themselves and healthcare workers, to name just a few.  
+		</p>
+
+		<p>
+			With that in mind, I decided to explore some ways machine learning could be leveraged to make things easier on those who may be suffering from health issues but are either unable or apprehensive to receive in-person care.  Convolutional Neural Networks (CNNs) are used widely in computer vision tasks, and my goal was to train a CNN that, given an image of an eye, would be able to detect visual symptoms of eye conditions such as conjunctivitis, and determine the likelihood of that condition existing.  
+		</p>
+
+		<p>
+			The underlying idea behind this project is not to replace a diagnosis from a medical professional, but rather that someone with unfamiliar symptoms might be able to upload a picture of their eye and get a better sense of their situation, given that in-person appointments may either be difficult to schedule or unnecessarily risky under the circumstances of the pandemic.  
+		</p>
+	</div>
+{% endblock content %}
+
+{% block image_container %}
+	<div class="screen">
+		<img style="width:224px; height: 394px;" src="{{ url_for('get_image', filename='computer_vision_wallpaper.png') }}">
+	</div>
+{% endblock image_container %}
