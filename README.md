@@ -22,10 +22,10 @@ I was interested in exploring how computer vision could help patients with visua
 
 **TL;DR:**
 
-Web Scraping: BeautifulSoup/Selenium
-Model Building: Keras/Tensorflow
-Cloud Computing: GCP
-Web Application: Flask, GAE
+Web Scraping: BeautifulSoup/Selenium  
+Model Building: Keras/Tensorflow  
+Cloud Computing: GCP  
+Web Application: Flask, GAE  
 
 <hr>
 
