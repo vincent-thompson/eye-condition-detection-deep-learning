@@ -1,6 +1,6 @@
-#Eye Condition Detection with Deep Learning
+# Eye Condition Detection with Deep Learning
 
-###Introduction
+### Introduction
 
 The COVID-19 pandemic has accelerated countless changes in the digital health space, including telehealth policy changes aimed at supporting increased access to care during and after the pandemic.
 
@@ -10,7 +10,7 @@ In the interim while telehealth continues to scale while tackling the short- and
 
 I was interested in exploring how computer vision could help patients with visual symptoms better understand the likelihood of a certain condition existing, allowing them to make more informed choices about wehter an in-person visit with a healthcare professional might be necessary.  Obviously a machine learning algorithm cannot conduct physical examinations, schedule imaging, or do a host of other things that a healthcare professional can to make a proper diagnosis.  My goal was merely to create a tool that could connect visual symptoms to potential conditions, so that, in the absence of telehealth access, patients can better assess the urgency of a healthcare visit. To that end, I created a convolutional neural network that, given an image, can detect the existence of various eye conditions such as styes, conjunctivitis, and cataracts.
 
-###Project Workflow and Tools Used
+### Project Workflow and Tools Used
 
 - To generate my dataset, I scraped images from various search engines, including Google and Bing Images, using Selenium and Beautiful Soup.<sup>2,3</sup>  I scraped the images using a diverse set of search terms in relatively small chunks (30-40 results per search term) to ensure a dataset that was as balanced as possible across eye colors, age range, sex, and skin complexion. 
 
@@ -29,7 +29,7 @@ Web Application: Flask, GAE
 
 <hr>
 
-###References
+### References
 
 1. [One in 10 Americans Use Telehealth, But Nearly 75% Lack Awareness or Access, J.D. Power Finds](https://www.americantelemed.org/industry-news/one-in-10-americans-use-telehealth-but-nearly-75-lack-awareness-or-access-j-d-power-finds/#:~:text=COSTA%20MESA%2C%20Calif.%3A%2031,and%20real%2Dworld%20patient%20concerns.)
 2. [Bing Image Scraper Example](https://gist.github.com/stephenhouser/c5e2b921c3770ed47eb3b75efbc94799)
